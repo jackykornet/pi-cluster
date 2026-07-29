@@ -30,7 +30,7 @@ spec:
       adminPassword: jacky
       ingress:
         enabled: true
-        ingressClassName: treafik
+        ingressClassName: traefik
         labels:
         hosts:
           - grafana.tenrokhomelab.org
