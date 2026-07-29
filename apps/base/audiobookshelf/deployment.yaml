@@ -21,25 +21,25 @@ spec:
                name: audiobookshelf-configmap
 
           volumeMounts:
-            - name: audiobookshelf-config
+            - name: config
               mountPath: /etc/audiobookshelf/config
-            - name: audiobookshelf-metadata
+            - name: metadata
               mountPath: /etc/audiobookshelf/metadata
-            - name: audiobookshelf-audiobooks
+            - name: audiobooks
               mountPath: /etc/audiobookshelf/audiobooks
-            - name: audiobookshelf-podcasts
+            - name: podcasts
               mountPath: /etc/audiobookshelf/podcasts
 
       volumes:
-        - name: audiobookshelf-config
+        - name: config
           persistentVolumeClaim:
             claimName: audiobookshelf-config-pvc
-        - name: audiobookshelf-metadata
+        - name: metadata
           persistentVolumeClaim:
             claimName: audiobookshelf-metadata-pvc
-        - name: audiobookshelf-audiobooks
+        - name: audiobooks
           persistentVolumeClaim:
             claimName: audiobookshelf-audiobooks-pvc
-        - name: audiobookshelf-podcasts
+        - name: podcasts
           persistentVolumeClaim:
             claimName: audiobookshelf-podcasts-pvc
