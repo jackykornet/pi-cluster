@@ -36,3 +36,6 @@ spec:
           - grafana.tenrokhomelab.org
         path: /
         tls:
+          - secretName: grafana-general-tls
+            hosts:
+              - grafana.tenrokhomelab.org
