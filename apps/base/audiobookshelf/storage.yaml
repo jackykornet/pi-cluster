@@ -12,7 +12,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: audiobookshelf-metiadata-pvc
+  name: audiobookshelf-metadata-pvc
 spec:
   accessModes:
     - ReadWriteOnce
