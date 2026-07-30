@@ -6,6 +6,6 @@ spec:
   ports:
     - port: 9091
   selector:
-    app: linkding
-  type: audiobookshelf
+    app: audiobookshelf
+  type: ClusterIP
 
