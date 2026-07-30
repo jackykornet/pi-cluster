@@ -25,6 +25,9 @@ spec:
             - configMapRef:
                name: audiobookshelf-configmap
 
+          securityContext:
+            allowPrivilegeEscalation: false
+
           volumeMounts:
             - name: config
               mountPath: /etc/audiobookshelf/config
@@ -48,6 +51,3 @@ spec:
         - name: podcasts
           persistentVolumeClaim:
             claimName: audiobookshelf-podcasts-pvci
-
-      securityContext:
-        allowPrivilegeEscalation: false
