@@ -68,7 +68,7 @@ data:
   config.yaml: |
     # Name of the tunnel you want to run
 
-    tunnel: bella02-homelab
+    tunnel: ldpi
 
     credentials-file: /etc/cloudflared/creds/credentials.json
 
@@ -79,8 +79,8 @@ data:
     ingress:
     - hostname: ld.tenrokhomelab.org
       service: http://linkding:9090
-    - hostname: abs.tenroklab.org
-      service: https://audiobookshelf:9091
+    - hostname: abs.tenrokhomelab.org
+      service: http://audiobookshelf:9091
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is
     # in the connection from cloudflared to your local service, not from the internet to cloudflared.
