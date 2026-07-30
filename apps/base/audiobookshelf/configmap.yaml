@@ -6,3 +6,6 @@ metadata:
 data:
   TZ: "Europe/Amsterdam"
   PORT: "3005"
+  CONFIG_PATH: "/etc/audiobookshelf/config"
+  METADATA_PATH: "/etc/audiobookshelf/metadata"
+  BACKUP_PATH: "/etc/audiobookshelf/metadata/backup"

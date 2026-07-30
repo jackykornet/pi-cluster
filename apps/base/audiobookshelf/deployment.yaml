@@ -11,6 +11,11 @@ spec:
     metadata:
       labels:
         app: audiobookshelf
+
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 1000
+
     spec:
       containers:
         - name: audiobookshelf
@@ -42,4 +47,7 @@ spec:
             claimName: audiobookshelf-audiobooks-pvc
         - name: podcasts
           persistentVolumeClaim:
-            claimName: audiobookshelf-podcasts-pvc
+            claimName: audiobookshelf-podcasts-pvci
+
+      securityContext:
+        allowPrivilegeEscalation: false
