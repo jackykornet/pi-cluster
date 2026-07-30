@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: audiobookshelf
+spec:
+  ports:
+    - port: 9091
+  selector:
+    app: linkding
+  type: audiobookshelf
+
